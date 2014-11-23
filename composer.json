@@ -1,0 +1,25 @@
+{
+    "name": "boolive/admin",
+    "type": "module",
+    "description": "Administration panel",
+    "keywords": ["boolive","package","widget","admin"],
+    "homepage": "http://boolive.ru",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vladimir Shestakov",
+            "email": "boolive@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "boolive/core": "dev-master",
+        "boolive/basic": "dev-master",
+        "boolive/widgets": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "../.."
+        }
+    }
+}
