@@ -1,0 +1,4 @@
+Admin
+=====
+
+Administration panel
