@@ -1,0 +1,11 @@
+{
+    "proto": "/vendor/boolive/basic/layout",
+    "file": "admin.tpl",
+    "logic": true,
+    "properties": {
+        "title": "Раздел управления сайтом",
+        "res":{
+            "proto": "/vendor/boolive/basic/controller_group"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.admin{
+
+    }
+    .admin__menu{
+        float: left;
+        width: 200px;
+        background: #eee;
+        }
+    .admin__main{
+        margin-left: 200px;
+        }
