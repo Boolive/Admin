@@ -15,7 +15,8 @@
         "php": ">=5.4.0",
         "boolive/core": "dev-master",
         "boolive/basic": "dev-master",
-        "boolive/widgets": "dev-master"
+        "boolive/widgets": "dev-master",
+        "boolive/forms": "dev-master"
     },
     "autoload": {
         "psr-4": {
