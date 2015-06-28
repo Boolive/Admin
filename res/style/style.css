@@ -38,6 +38,7 @@ html, body{
     .admin__main{
         display: table-cell;
         padding: 10px;
+        vertical-align: top;
         }
         .admin__main h1{
             margin-top: 0;

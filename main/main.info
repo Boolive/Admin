@@ -1,4 +1,20 @@
 {
     "proto": "/vendor/boolive/forms/form_auto",
-    "is_link": true
+    "logic": true,
+    "order": 0,
+    "properties": {
+        "views": {
+            "proto": "/vendor/boolive/forms/form_auto/views",
+            "order": 0
+        },
+        "res": {
+            "proto": "/vendor/boolive/forms/form_auto/res"
+        },
+        "description": {
+            "proto": "/vendor/boolive/forms/form_auto/description"
+        },
+        "title": {
+            "proto": "/vendor/boolive/forms/form_auto/title"
+        }
+    }
 }
