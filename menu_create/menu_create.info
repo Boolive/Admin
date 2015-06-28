@@ -1,0 +1,15 @@
+{
+    "proto": "/vendor/boolive/basic/widget",
+    "file": "menu_create.tpl",
+    "logic": true,
+    "order": 0,
+    "properties": {
+        "res":{
+            "proto": "/vendor/boolive/basic/widget/res"
+        },
+        "items": {
+            "proto": "/vendor/boolive/basic/object",
+            "order": 0
+        }
+    }
+}

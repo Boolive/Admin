@@ -13,6 +13,7 @@
                     <?=$v['menu_main']->string()?>
                 </div>
         <div class="admin__main">
+            <?=$v['menu_create']->string()?>
 <!--            <h1>Админка</h1>-->
                 <?=$v['main']->string()?>
         </div>
