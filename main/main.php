@@ -33,4 +33,14 @@ class main extends form_auto
         }
         return parent::work($request);
     }
+
+    function process(Request $request)
+    {
+        if (parent::process($request)){
+            $request->redirect(Request::url('/admin'.$request['REQUEST']['object']->uri()));
+        }else{
+            $request->redirect(Request::url(null,[],true));
+        }
+
+    }
 }
