@@ -1,7 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     position: relative;
     height: 100%;
     }
@@ -14,7 +14,7 @@ html, body{
         display: table-cell;
         width: 100px;
         padding: 15px 30px;
-        background: #ECECEC;
+        background: #434F61;
         color: #D5D5D5;
         font-size: 14px;
         white-space: nowrap;
@@ -22,14 +22,15 @@ html, body{
         }
         .admin__menu > ul{
             padding: 0 5px;
+            /*list-style: none;*/
             }
             .admin__menu > ul ul{
-                padding-left: 25px;
-                list-style: disc;
+                padding-left: 20px;
+                list-style: none;
                 margin: 0 0 5px;
                 }
         .admin__menu a{
-            color: #565656;
+            color: #eee;
             text-decoration: none;
             }
             .admin__menu a:hover{
@@ -37,8 +38,9 @@ html, body{
                 }
     .admin__main{
         display: table-cell;
-        padding: 10px;
+        padding: 10px 20px;
         vertical-align: top;
+        background: #f5f5f5;
         }
         .admin__main h1{
             margin-top: 0;

@@ -8,7 +8,7 @@
             "order": 0
         },
         "res": {
-            "proto": "/vendor/boolive/forms/form_auto/res"
+            "proto": "/vendor/boolive/basic/controller_group"
         },
         "description": {
             "proto": "/vendor/boolive/forms/form_auto/description"
