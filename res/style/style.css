@@ -14,8 +14,8 @@ html, body{
         display: table-cell;
         width: 100px;
         padding: 15px 30px;
-        background: #434F61;
-        color: #D5D5D5;
+        background: #252525;
+        color: #aaa;
         font-size: 14px;
         white-space: nowrap;
         border-right: 1px solid #DFDFDF;
@@ -30,11 +30,12 @@ html, body{
                 margin: 0 0 5px;
                 }
         .admin__menu a{
-            color: #eee;
+            color: #aaa;
             text-decoration: none;
             }
             .admin__menu a:hover{
                 text-decoration: underline;
+                color: #fafafa;
                 }
     .admin__main{
         display: table-cell;
