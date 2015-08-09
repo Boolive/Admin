@@ -34,6 +34,10 @@
         display: inline-block;
         position: relative;
         }
+    .field__description{
+        font-size: 13px;
+        color: #777;
+        }
     .field__input-wrap{
         border: 1px #999999 solid;
         background-color: #FFF;
@@ -73,4 +77,19 @@
         }
     .field__error{
 
+        }
+    .field__box{
+        border: 1px #999999 solid;
+        width: 100%;
+        color: #000;
+        font-size: 11pt;
+        padding: 4px 4px;
+        max-width: 100%;
+        margin: 0;
+        box-shadow: inset -1px 1px 0 1px #f5f5f5;
+        border-radius: 3px;
+        display: inline-block;
+        position: relative;
+        outline: none;
+        box-sizing: border-box;
         }
