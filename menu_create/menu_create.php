@@ -15,7 +15,7 @@ class menu_create extends widget
     function show($v, Request $request)
     {
         $v['items'] = Data::find([
-            'from' => $this->items,
+            'from' => '/library/contents',
             'select' => 'children'
         ]);
         return parent::show($v, $request);
