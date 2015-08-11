@@ -1,0 +1,31 @@
+
+.menu_main{
+    padding: 0 5px;
+    margin: 0;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    }
+    .menu_main .menu_main{
+        padding-left: 20px;
+        list-style: none;
+        font-size: 13px;
+        margin: 2px 0 13px;
+        font-weight: normal;
+        }
+        .menu_main .menu_main .menu_main {
+            margin: 0 0 2px;
+            }
+    .menu_main__item{
+        line-height: 1.46;
+        }
+        .menu_main__link{
+            color: #e0e0e0;
+            text-decoration: none;
+            }
+            .menu_main__link:hover{
+                text-decoration: underline;
+                color: #0d97ff;
+                }
+            .menu_main__item_active > .menu_main__link{
+                color: #0d97ff;
+                }

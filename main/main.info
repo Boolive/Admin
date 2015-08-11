@@ -2,6 +2,7 @@
     "proto": "/vendor/boolive/forms/form_auto",
     "logic": true,
     "order": 0,
+    "file": "main.tpl",
     "properties": {
         "views": {
             "proto": "/vendor/boolive/forms/form_auto/views",

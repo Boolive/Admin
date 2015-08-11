@@ -20,23 +20,7 @@ html, body{
         white-space: nowrap;
         border-right: 1px solid #DFDFDF;
         }
-        .admin__menu > ul{
-            padding: 0 5px;
-            /*list-style: none;*/
-            }
-            .admin__menu > ul ul{
-                padding-left: 20px;
-                list-style: none;
-                margin: 0 0 5px;
-                }
-        .admin__menu a{
-            color: #aaa;
-            text-decoration: none;
-            }
-            .admin__menu a:hover{
-                text-decoration: underline;
-                color: #fafafa;
-                }
+
     .admin__main{
         display: table-cell;
         padding: 10px 20px;

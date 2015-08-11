@@ -10,12 +10,12 @@
 <body>
     <div class="admin">
         <div class="admin__menu">
-                    <?=$v['menu_main']->string()?>
-                </div>
+            <?=$v['menu_main']->string()?>
+        </div>
         <div class="admin__main">
             <?=$v['menu_create']->string()?>
 <!--            <h1>Админка</h1>-->
-                <?=$v['main']->string()?>
+            <?=$v['main']->string()?>
         </div>
 
     </div>
