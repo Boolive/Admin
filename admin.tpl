@@ -9,9 +9,14 @@
 </head>
 <body>
     <div class="admin">
-        <div class="admin__menu">
-            <?=$v['menu_main']->string()?>
+        <div class="admin__side">
+            <?=$v['menu_side']->string()?>
         </div>
+        <?php if ($widget = $v['menu_main']->string()):?>
+        <div class="admin__menu">
+            <?=$widget?>
+        </div>
+        <?php endif;?>
         <div class="admin__main">
             <?=$v['menu_create']->string()?>
 <!--            <h1>Админка</h1>-->

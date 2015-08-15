@@ -30,3 +30,9 @@ html, body{
         .admin__main h1{
             margin-top: 0;
             }
+    .admin__side{
+        display: table-cell;
+        width: 30px;
+        vertical-align: top;
+        background-color: #403F3F;
+        }

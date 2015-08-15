@@ -25,12 +25,19 @@ class menu_main extends widget
     function show($v, Request $request)
     {
         $v['active'] = $request['REQUEST']['object']->uri();
-        $v['items'] = Data::find([
-            'from' => '',
-            'select' => 'children',
-            'depth' => 10,
-            'struct' => 'tree'
-        ]);
+
+        $from = trim($v['active'],'/ ');
+        if ($from) {
+            $paths = explode('/', $from);
+            $from = '';
+            $cnt = min(1, count($paths));
+            for ($i = 0; $i < $cnt; $i++) {
+                $from .= '/' . $paths[$i];
+            }
+            $v['items'] = Data::find(['from' => $from, 'select' => 'children', 'depth' => 10, 'struct' => 'tree', 'order' => ['order', 'asc']]);
+        }else{
+            return false;
+        }
         return parent::show($v, $request);
     }
 }

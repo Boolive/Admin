@@ -32,6 +32,7 @@ class admin extends layout
 
     function show($v, Request $request)
     {
+        $v['menu_side'] = $this->menu_side->start($request);
         $v['menu_main'] = $this->menu_main->start($request);
         $v['menu_create'] = $this->menu_create->start($request);
         $v['main'] = $this->main->start($request);
