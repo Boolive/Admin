@@ -1,0 +1,11 @@
+{
+    "proto": "/vendor/boolive/basic/javascript",
+    "file": "menu_main.js",
+    "properties": {
+        "depends": {
+            "proto": "/vendor/boolive/basic/javascript/depends",
+            "order": 0,
+            "is_mandatory": true
+        }
+    }
+}

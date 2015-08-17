@@ -34,7 +34,7 @@ class admin extends layout
     {
         $v['menu_side'] = $this->menu_side->start($request);
         $v['menu_main'] = $this->menu_main->start($request);
-        $v['menu_create'] = $this->menu_create->start($request);
+        $v['menu_operations'] = $this->menu_operations->start($request);
         $v['main'] = $this->main->start($request);
         return parent::show($v, $request);
     }

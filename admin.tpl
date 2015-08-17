@@ -7,7 +7,7 @@
     <meta name="keywords" content="<?=implode(', ',$v['meta']['keywords']->arrays('escape'))?>">
     <?php echo $v['head']->string(); ?>
 </head>
-<body>
+<body data-widget="admin">
     <div class="admin">
         <div class="admin__side">
             <?=$v['menu_side']->string()?>
@@ -18,11 +18,12 @@
         </div>
         <?php endif;?>
         <div class="admin__main">
-            <?=$v['menu_create']->string()?>
-<!--            <h1>Админка</h1>-->
             <?=$v['main']->string()?>
         </div>
 
+    </div>
+    <div style="display: block">
+        <?=$v['menu_operations']->string()?>
     </div>
 </body>
 </html>

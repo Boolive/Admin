@@ -1,0 +1,7 @@
+{
+    "proto": "/vendor/boolive/basic/vendor_front",
+    "properties": {
+        "version": "*",
+        "import": "jquery/dist/jquery.min.js; widget-js/widget.js"
+    }
+}

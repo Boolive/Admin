@@ -34,6 +34,7 @@ class menu_main extends widget
             for ($i = 0; $i < $cnt; $i++) {
                 $from .= '/' . $paths[$i];
             }
+            $v['from'] = $from;
             $v['items'] = Data::find(['from' => $from, 'select' => 'children', 'depth' => 10, 'struct' => 'tree', 'order' => ['order', 'asc']]);
         }else{
             return false;

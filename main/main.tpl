@@ -1,5 +1,5 @@
 <div class="form form_auto">
-    <h2 class="form__title"><?=$v['object']->entity()->proto(null, true)->title?></h2>
+    <h4 class="form__title"><?=$v['object']->entity()->proto(null, true)->title?></h4>
     <?php
     $result = $v['result']->int();
     $result_class = $result==1 ? 'form__result_error' : ($result==2 ? 'form__result_ok' : '');
@@ -14,9 +14,9 @@
         <input type="hidden" name="form" value="<?=$v['controller']?>">
         <input type="hidden" name="object" value="<?=$v['object']->entity()->uri()?>">
 
-        <div class="">
-            <input name="attr[name]" value="">
-        </div>
+<!--        <div class="">-->
+<!--            <input name="attr[name]" value="">-->
+<!--        </div>-->
         <!-- Поляс войства -->
         <?php
         $list = $v['views']->arrays(\boolive\core\values\Rule::string());

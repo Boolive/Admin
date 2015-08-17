@@ -13,12 +13,13 @@ html, body{
     .admin__menu{
         display: table-cell;
         width: 100px;
-        padding: 15px 30px;
+        padding: 15px 0 15px 30px;
         background: #252525;
         color: #aaa;
         font-size: 14px;
         white-space: nowrap;
         border-right: 1px solid #DFDFDF;
+        vertical-align: top;
         }
 
     .admin__main{

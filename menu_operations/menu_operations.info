@@ -1,7 +1,7 @@
 {
     "proto": "/vendor/boolive/basic/widget",
     "order": 0,
-    "file": "menu_main.tpl",
+    "file": "menu_operations.tpl",
     "logic": true,
     "properties": {
         "res": {
