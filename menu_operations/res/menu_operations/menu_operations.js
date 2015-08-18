@@ -45,6 +45,7 @@
             var self = this;
             self.$element.html('...');
             this.loader = $.ajax({
+                method: 'POST',
                 data: {
                     object: this.object,
                     form: this.uri
