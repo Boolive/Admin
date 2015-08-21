@@ -28,10 +28,20 @@ class main extends form_auto
     function work(Request $request)
     {
         if (isset($request['REQUEST']['proto'])){
-            $request['REQUEST']['object'] = Data::create($request['REQUEST']['proto'], $request['REQUEST']['object']);
+            $request['REQUEST']['parent'] = $request['REQUEST']['object'];
+            $request['REQUEST']['object'] = Data::create($request['REQUEST']['proto'], $request['REQUEST']['parent']);
             $request['REQUEST']['object']->complete();
         }
         return parent::work($request);
+    }
+
+    function show($v, Request $request)
+    {
+        if (isset($request['REQUEST']['proto']) && !$request['REQUEST']['object']->is_exists()){
+            $v['proto'] = $request['REQUEST']['proto'];
+            $v['parent'] = $request['REQUEST']['parent'];
+        }
+        return parent::show($v, $request);
     }
 
     function process(Request $request)
