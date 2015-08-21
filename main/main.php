@@ -19,7 +19,8 @@ class main extends form_auto
         return parent::startRule()->mix(
             Rule::arrays([
                 'REQUEST' => Rule::arrays([
-                    'proto' => Rule::entity()
+                    'proto' => Rule::entity(),
+                    'attr' => Rule::arrays(Rule::string())
                 ])
             ])
         );
@@ -31,6 +32,9 @@ class main extends form_auto
             $request['REQUEST']['parent'] = $request['REQUEST']['object'];
             $request['REQUEST']['object'] = Data::create($request['REQUEST']['proto'], $request['REQUEST']['parent']);
             $request['REQUEST']['object']->complete();
+        }
+        if (!empty($request['REQUEST']['attr']['name'])){
+            $request['REQUEST']['object']->name($request['REQUEST']['attr']['name']);
         }
         return parent::work($request);
     }
