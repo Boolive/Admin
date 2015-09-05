@@ -17,7 +17,7 @@
                 self.emit('showObjectOperations', [{
                     object:$(this).attr('data-object'),
                     pos: pos
-                }], null, true);
+                }], true);
 
                 $(this).addClass('menu_main__popup_active');
 

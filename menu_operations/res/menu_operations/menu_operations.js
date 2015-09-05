@@ -22,13 +22,13 @@
         on_showObjectOperations: function(caller, info){
             var self = this;
             if (typeof this.object !== 'undefined'){
-                self.emit('hideObjectOperations', [{object:self.object}], null, true);
+                self.emit('hideObjectOperations', [{object:self.object}], true);
             }
             self.object = info.object;
             self.loadMenu();
             self.$element.css({top: info.pos.top, left: info.pos.left, display:'block'});
             $(document).one('click', function(){
-                self.emit('hideObjectOperations', [{object:self.object}], null, true);
+                self.emit('hideObjectOperations', [{object:self.object}], true);
             });
         },
         /**
