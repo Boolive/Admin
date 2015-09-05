@@ -119,6 +119,7 @@
         color: #8E8E8E;
         border-radius: 2px;
         padding: 0 2px;
+        white-space: nowrap;
         }
     .field_address__name{
         padding-left: 2px;
