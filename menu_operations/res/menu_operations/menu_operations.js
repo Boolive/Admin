@@ -21,7 +21,7 @@
              * @param caller
              * @param info
              */
-            showObjectOperations: function (caller, info) {
+            showObjectOperations: function (info) {
                 var self = this;
                 if (typeof this.object !== 'undefined') {
                     self.emit('hideObjectOperations', [{object: self.object}], true);
@@ -38,10 +38,10 @@
              * @param caller
              * @param info
              */
-            hideObjectOperations: function (caller, info) {
+            hideObjectOperations: function (info) {
                 this.$element.css('display', 'none');
                 this.object = undefined;
-            },
+            }
         },
 
         loadMenu: function(){

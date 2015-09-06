@@ -7,7 +7,5 @@
         create: function () {
             this._super('Widget').create.call(this);
         }
-
-
     });
 })(jQuery, WidgetJS);
