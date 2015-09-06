@@ -26,13 +26,14 @@
             });
         },
 
-        /**
-         * Deactivate buttons
-         * @param caller
-         * @param info
-         */
-        on_hideObjectOperations: function(caller, info){
-            this.buttons.removeClass('menu_main__popup_active');
+        on: {
+            /**
+             * Deactivate buttons
+             * @param info
+             */
+            hideObjectOperations: function(info){
+                this.buttons.removeClass('menu_main__popup_active');
+            }
         }
     });
 })(jQuery, WidgetJS);
