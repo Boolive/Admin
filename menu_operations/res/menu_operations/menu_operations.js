@@ -51,7 +51,7 @@
                 method: 'POST',
                 data: {
                     object: this.object,
-                    form: this.uri
+                    handler: this.uri
                 }
             }).done(function(data){
 
