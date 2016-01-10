@@ -120,6 +120,8 @@
         border-radius: 2px;
         padding: 0 2px;
         white-space: nowrap;
+        line-height: 1;
+        vertical-align: middle;
         }
     .field_address__name{
         padding-left: 2px;
