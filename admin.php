@@ -7,6 +7,7 @@
 namespace boolive\admin;
 
 use boolive\basic\layout\layout;
+use boolive\core\auth\Auth;
 use boolive\core\request\Request;
 use boolive\core\values\Rule;
 
@@ -25,6 +26,10 @@ class admin extends layout
 
     function work(Request $request)
     {
+        $user = Auth::get_user();
+        if($user->uri()!='/system/users/admin'){
+            $request->redirect('sign-in');
+        }
         $request->mix(['REQUEST' => ['object' => mb_substr($request['REQUEST']['path'], mb_strlen($this->path))]]);
         return parent::work($request);
     }
